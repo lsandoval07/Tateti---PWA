@@ -4,5 +4,7 @@
     "short_name":"Ta-te-ti",
     "__coment":"Este es el nombre de abajo del ícono.",
     "start_url":"index.html",
-    "__coment":"pagína inicial que usa para cargar"
+    "__coment":"pagína inicial que usa para cargar",
+    "display":"standalone",
+    "__coment":"display define como se va a ver nuestra página, standalone es el modo sin la barra de navegación."
 }

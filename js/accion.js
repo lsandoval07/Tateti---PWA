@@ -145,7 +145,7 @@ var puntoO=0;
                  else
                  {
                  modal.childNodes[0].innerHTML="Campeón definitivo "+anotar+"!!!"; 
-                 modal.childNodes[1].innerHTML=""
+                 modal.childNodes[1].innerHTML="";
                  modal.childNodes[2].innerHTML="reiniciar";  
                  modal.childNodes[2].setAttribute("onclick","reiniciar()");
                  }

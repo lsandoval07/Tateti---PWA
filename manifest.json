@@ -1,14 +1,9 @@
 {
     "name":"Ta-Te-Ti PWA",
-    "__coment":"name es el nombre del splash de la app.",
     "short_name":"Ta-te-ti",
-    "__coment":"Este es el nombre de abajo del ícono.",
     "start_url":"index.html",
-    "__coment":"pdefine donde va a iniciar nuestra app",
     "display":"standalone",
-    "__coment":"display define como se va a ver nuestra página, standalone es el modo sin la barra de navegación.",
     "orientation":"portrait-primary",
-    "__coment":"define que nuestro sitio se va a abrir en primer lugar en orientación vertical u horizontal, en este caso portrait es vertical.",
     "theme_color":"rgba(71, 248, 160, 0.911)",
     "background_color":"rgba(71, 248, 160, 0.911)"
 }

@@ -5,5 +5,24 @@
     "display":"standalone",
     "orientation":"portrait-primary",
     "theme_color":"rgba(71, 248, 160, 0.911)",
-    "background_color":"rgba(71, 248, 160, 0.911)"
+    "background_color":"rgba(71, 248, 160, 0.911)",
+    "icons":[
+                {
+                    "src":"img/ico96x96.png",
+                    "type":"image/png",
+                    "size":"96x96"
+                },
+                {
+                    "src":"img/ico114x114.png",
+                    "type":"image/png",
+                    "size":"114x114"
+                },
+                {
+                    "src":"img/ico512x512.png",
+                    "type":"image/png",
+                    "size":"512x512"
+                }                
+
+
+            ]
 }

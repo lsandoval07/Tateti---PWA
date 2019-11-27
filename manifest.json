@@ -18,6 +18,11 @@
                     "size":"114x114"
                 },
                 {
+                    "src":"img/ico144x144.png",
+                    "type":"image/png",
+                    "size":"144x144"
+                },                
+                {
                     "src":"img/ico512x512.png",
                     "type":"image/png",
                     "size":"512x512"

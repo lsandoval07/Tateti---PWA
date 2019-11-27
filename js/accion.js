@@ -137,7 +137,7 @@ var puntoO=0;
                         h1[1].innerHTML="O:"+puntoO;
                     }
                  var modal=document.getElementsByTagName("section")[0];
-                 if (puntoX<1 && puntoO<1)  
+                 if (puntoX<3 && puntoO<3)  
                  {                 
                  modal.childNodes[0].innerHTML="Gano "+anotar+"!!!"; 
                  modal.childNodes[2].innerHTML="Jugar otra vez"; 

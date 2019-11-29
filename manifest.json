@@ -6,7 +6,22 @@
     "orientation":"portrait-primary",
     "theme_color":"rgba(71, 248, 160, 0.911)",
     "background_color":"rgba(71, 248, 160, 0.911)",
-    "icons":[
+    "icons":[   
+                {
+                    "src":"img/ico72x72.png",
+                    "type":"image/png",
+                    "size":"72x72"
+                },
+                {
+                    "src":"img/ico96x96.png",
+                    "type":"image/png",
+                    "size":"96x96"
+                },       
+                {
+                    "src":"img/ico96x96.png",
+                    "type":"image/png",
+                    "size":"96x96"
+                },
                 {
                     "src":"img/ico96x96.png",
                     "type":"image/png",

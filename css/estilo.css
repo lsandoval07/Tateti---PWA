@@ -81,7 +81,7 @@ h1
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
-    height: 390px;
+    height: 400px;
   }
 .modal > section > h3, .modal > section > h4
   {

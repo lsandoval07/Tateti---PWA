@@ -10,42 +10,42 @@
                 {
                     "src":"img/ico72x72.png",
                     "type":"image/png",
-                    "size":"72x72"
+                    "sizes":"72x72"
                 },
                 {
                     "src":"img/ico96x96.png",
                     "type":"image/png",
-                    "size":"96x96"
+                    "sizes":"96x96"
                 },       
                 {
                     "src":"img/ico96x96.png",
                     "type":"image/png",
-                    "size":"96x96"
+                    "sizes":"96x96"
                 },
                 {
                     "src":"img/ico96x96.png",
                     "type":"image/png",
-                    "size":"96x96"
+                    "sizes":"96x96"
                 },
                 {
                     "src":"img/ico128x128.png",
                     "type":"image/png",
-                    "size":"128x128"
+                    "sizes":"128x128"
                 },
                 {
                     "src":"img/ico144x144.png",
                     "type":"image/png",
-                    "size":"144x144"
+                    "sizes":"144x144"
                 },   
                 {
                     "src":"img/ico192x192.png",
                     "type":"image/png",
-                    "size":"192x192"
+                    "sizes":"192x192"
                 },                              
                 {
                     "src":"img/ico512x512.png",
                     "type":"image/png",
-                    "size":"512x512"
+                    "sizes":"512x512"
                 }                
 
 

@@ -10,7 +10,7 @@ body
     background-color: rgba(71, 248, 160, 0.911);
     display: grid;
     height: 100vh;
-    grid-template-rows: 90px 1fr;
+    grid-template-rows: 100px 1fr;
   }
  
 div

@@ -19,6 +19,17 @@ const nombreCache="sitio-cache-v2";// era sin v2
 const dinamicoCache="sitio-dinamico.vl";
 const elementos=["https://lsandoval07.github.io/Tateti---PWA/","index.html","css/estilo.css","js/accion.js","manifest.json","js/app.js","fallback.html"];
 
+// Función para limitar el cache
+const limiteCache =  (nombre, tamaño)=> {
+    caches.open(nombre).then(cache => {
+        cache.keys().then(keys => {
+            if(keys.lenght > tamaño){
+                cache.delete(keys[0]).then(limiteCache(nombre,tamaño));
+            }
+        })
+    })
+};
+
 // Instalar el service worker
 self.addEventListener("install", evt =>
 {
@@ -51,7 +62,7 @@ self.addEventListener("fetch", evt =>{
 			return  cacheRes || fetch(evt.request).then(fetchRes =>{
                 return caches.open(dinamicoCache).then(cache => {
                     cache.put(evt.request.url, fetchRes.clone());
-                    //limiteCache(dinamicoCache, 5);
+                    limiteCache(dinamicoCache, 5);
                     return fetchRes;
                 })
             })

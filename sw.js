@@ -17,7 +17,7 @@ self.addEventListener("fetch", evt=>{console.log("Se atrapó el evento: ", evt);
 
 const nombreCache="sitio-cache-v2";// era sin v2
 const dinamicoCache="sitio-dinamico.vl";
-const elementos=["https://lsandoval07.github.io/Tateti---PWA/","index.html","/css/estilo.css","/js/accion.js","manifest.json","/js/app.js"];
+const elementos=["https://lsandoval07.github.io/Tateti---PWA/","index.html","css/estilo.css","js/accion.js","manifest.json","/js/app.js"];
 
 // Instalar el service worker
 self.addEventListener("install", evt =>
@@ -45,10 +45,10 @@ self.addEventListener("activate", evt =>{
 });
 //Eventos Fetch - fetch request o pedido de busqueda
 self.addEventListener("fetch", evt =>{
-	console.log("Se atrapo el Evento: ", evt);
+	//console.log("Se atrapo el Evento: ", evt);
 	evt.respondWith(
 		caches.match(evt.request).then(cacheRes => {
-			return  cacheRes || fetch(evt.request)
+			return  cacheRes || fetch(evt.request).then
 		})
 	);
 });

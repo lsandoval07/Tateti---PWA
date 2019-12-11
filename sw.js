@@ -17,7 +17,7 @@ self.addEventListener("fetch", evt=>{console.log("Se atrapó el evento: ", evt);
 
 const nombreCache="sitio-cache-v2";// era sin v2
 const dinamicoCache="sitio-dinamico.vl";
-const elementos=["https://lsandoval07.github.io/Tateti---PWA/","index.html","css/estilo.css","js/accion.js","manifest.json","/js/app.js"];
+const elementos=["https://lsandoval07.github.io/Tateti---PWA/","index.html","css/estilo.css","js/accion.js","manifest.json","js/app.js","fallback.html"];
 
 // Instalar el service worker
 self.addEventListener("install", evt =>
@@ -36,8 +36,8 @@ self.addEventListener("activate", evt =>{
 	evt.waitUntil(
 		caches.keys().then(Keys => {
 			console.log(keys);
-			return promise.all(keys
-				.filter(Key => key !== nombreCache)
+			return Promise.all(keys
+				.filter(key => key !== nombreCache && key !== dinamicoCache)
 				.map(key => caches.delete(key))
 				)
 		})

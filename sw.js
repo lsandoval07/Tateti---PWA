@@ -48,7 +48,13 @@ self.addEventListener("fetch", evt =>{
 	//console.log("Se atrapo el Evento: ", evt);
 	evt.respondWith(
 		caches.match(evt.request).then(cacheRes => {
-			return  cacheRes || fetch(evt.request).then
+			return  cacheRes || fetch(evt.request).then(fetchRes =>{
+                return caches.open(dinamicoCache).then(cache => {
+                    cache.put(evt.request.url, fetchRes.clone());
+                    //limiteCache(dinamicoCache, 5);
+                    return fetchRes;
+                })
+            })
 		})
 	);
 });

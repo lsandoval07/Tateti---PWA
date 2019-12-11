@@ -36,7 +36,7 @@ self.addEventListener("activate", evt =>{
 	evt.waitUntil(
 		caches.keys().then(Keys => {
 			console.log(keys);
-			return Promise.all(keys
+			return promise.all(keys
 				.filter(Key => key !== nombreCache)
 				.map(key => caches.delete(key))
 				)

@@ -156,7 +156,7 @@ var puntoO=0;
             {
                 puntoX=0;
                 puntoO=0;
-                h1[0].innerHTML="X:";
-                h1[1].innerHTML="O:";
+                h1[0].innerHTML="X:0";
+                h1[1].innerHTML="O:0";
                 ocultar();
             }

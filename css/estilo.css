@@ -35,7 +35,7 @@ header
     align-items: center;
     justify-items: center;
     border-radius: 15px;
-    margin: 22px 22px 0 22px;
+    margin: 0px 22px 0 22px;
   }  
 /*margin auto cuando es una grilla y está dentro de otra grilla se acomoda solo*/ 
 section
@@ -131,5 +131,5 @@ h2
  .error
   {
     grid-column: span 3;
-    justify-self:center;
+    justify-self: center;
   }   

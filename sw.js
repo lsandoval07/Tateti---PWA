@@ -1,6 +1,23 @@
-const nombreCache="sitio-cache-v2";// era sin v2
+/*const nombreCache="Sitio-Caché";
+const elementos=["/","/index.html","/css/estilo.css","/js/accion.js"]
+//Instalar el service worker
+self.addEventListener("install", evt=>{
+    //console.log("El service worker se instaló");
+    evt.waitUntil(
+        caches.open(nombreCache).then((cache)=>
+        {console.log("Definimos el cache predeterminado.");
+        cache.addAll(elementos);
+    })
+    );
+//Activar el service worker
+self.addEventListener("activate", evt=> {console.log("El service worker se activó.");});
+//Eventos Fetch (fetch request o pedido de búsqueda).
+self.addEventListener("fetch", evt=>{console.log("Se atrapó el evento: ", evt);});
+*/
 
-const elementos=["https://cheloelian.github.io/TatetiPwa/","index.html","ejer6ok0711.css","ejer6ok0711.js","manifest.json","app.js"];
+const nombreCache="sitio-cache-v2";// era sin v2
+const dinamicoCache="sitio-dinamico.vl";
+const elementos=["https://lsandoval07.github.io/Tateti---PWA/","index.html","/css/estilo.css","/js/accion.js","manifest.json","/js/app.js"];
 
 // Instalar el service worker
 self.addEventListener("install", evt =>
@@ -35,6 +52,5 @@ self.addEventListener("fetch", evt =>{
 		})
 	);
 });
-
 
 

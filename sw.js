@@ -32,7 +32,7 @@ const limiteCache =  (nombre, tamaño)=> {
 
 // Instalar el service worker
 self.addEventListener("install", evt =>
-{
+{1
 	console.log("El Service Worker se instalo");
 	evt.waitUntil(
 		caches.open(nombreCache).then((cache)=> 
@@ -73,14 +73,3 @@ self.addEventListener("fetch", evt =>{
         })
 	);
 });
-
-
-const limiteCache = (nombre, tamaño) => {
-	caches.open(nombre).then(cache => {
-		cache.keys().then(keys => {
-			if(keys.length > tamaño){
-				cache.delete(keys[0]).then(limiteCache(nombre, tamaño));
-			}
-		})
-	})
-};
